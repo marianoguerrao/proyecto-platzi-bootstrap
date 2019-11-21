@@ -1,0 +1,66 @@
+#header img{
+width: 80px;
+}
+
+.text-platzi{
+  color:#91C93D !important ;
+}
+
+#main .carousel-inner img{
+max-height: 70vh;
+object-fit: cover;
+/*ajusta las imagenes a la proporcion del espacio donde estan*/
+filter: grayscale(70%);
+/*le da un tono gris a las fotos*/
+}
+
+#carousel{
+  position: relative;
+}
+
+#carousel .overlay{
+  position: absolute;
+  /*permite que el texto overlay se expanda por todo lo ancho y alto de la pantalla según el dispositivo*/
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* 0 espacio para los margenes del texto en este caso*/
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  z-index: 1;
+  /*sirve para controlar la prioridad de los elementos, entre mayor es el valor mayor prioridad. 
+  En este caso para que el texto sea prioritario y se vea*/
+}
+
+#carousel .overlay .container,
+#carousel .overlay .row{
+height: 100%;
+}
+
+.btn-platzi{
+  background-color:#91C93D ;
+  color: white;
+}
+
+.btn-platzi:hover{
+  background-color:rgb(120, 167, 51) ;
+  /*propiedad para que al pasar el mouse sobre el boton este cambie de color al indicado. 
+  En este caso a un tono de verde más abscuro*/
+}
+
+#place-time{
+  background-color: #343A40;
+  color: white;
+}
+#place-time img{
+  max-width: 100%;/*indica que la imagen sólo use el 100% de las columnas indicadas en el "col"*/
+}
+
+#footer{
+  background:#1C3643 ;
+}
+
+#footer a{
+  color: white;
+}
